@@ -1,0 +1,17 @@
+name: "mon workflow"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "step1"
+        uses: actions/checkout@v2
+      - name: "steps 2"
+        run: npm install
+      - name: steps 3
+        run:  echo goods
+
+
