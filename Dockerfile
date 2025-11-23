@@ -4,7 +4,7 @@ WORKDIR /home/alp/app
 COPY . /home/alp/app
 
 RUN pip install -r requirements.txt \
-    sudo useradd alp
+    useradd alp
 
 USER alp
 EXPOSE 8000
